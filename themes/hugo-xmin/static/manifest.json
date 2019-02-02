@@ -1,0 +1,23 @@
+{
+  "name": "Shubham Pandey",
+  "short_name": "SPIN",
+  "description": "Be Whatever you want to be...",
+  "icons": [
+    {
+      "src": "resources/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "resources/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#ffffff",
+  "theme_color": "#1e73be",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "./?utm_source=pwa",
+  "scope": "/"
+}

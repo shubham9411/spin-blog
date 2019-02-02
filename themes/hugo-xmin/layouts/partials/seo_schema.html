@@ -1,0 +1,44 @@
+<script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "{{ .Site.BaseURL }}"
+    },
+    "image": "/resources/logo.jpg",
+    "articleSection" : "{{ .Section }}",
+    "name" : "{{ .Title }}",
+    "headline" : "{{ .Title }}",
+    "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
+    "inLanguage" : "en-US",
+    "author": {
+        "@type": "Person",
+        "name" : "Shubham Pandey"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Shubham Pandey",
+        "logo": {
+            "@type": "ImageObject",
+            "name": "logo",
+            "width": "60",
+            "height": "600",
+            "url": "/resources/logo.jpg"
+        }
+    },
+    "accountablePerson" : "Shubham Pandey",
+    "copyrightHolder" : "Shubham Pandey",
+    "copyrightYear" : "{{ .Date.Format "2006" }}",
+    "datePublished": "{{ .Date }}",
+    "dateModified" : "{{ .Date }}",
+    "url" : "{{ .Permalink }}",
+    "wordCount" : "{{ .WordCount }}",
+    "keywords" : [ {{ if isset .Params "tags" }}{{ range .Params.tags }}"{{ . }}",{{ end }}{{ end }}"Blog" ]
+}
+</script>
+
+<meta name="Description" content="{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}Shubham Pandey Blog{{end}}{{ end }}" />
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="{{ .Permalink}}">
+<meta name="theme-color" content="#1e73be"/>

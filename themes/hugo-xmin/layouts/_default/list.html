@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+
+{{if not .IsHome }}
+<h1>{{ .Title | markdownify }}</h1>
+{{ end }}
+
+{{ .Content }}
+<main>
+<ul>
+  {{ $paginator := .Paginate (where .Data.Pages "Section" "!=" "") }}
+  {{ range $paginator.Pages }}
+  <li>
+    <span class="date">{{ .Date.Format "2006/01/02" }}</span>
+    <a href="{{ .URL }}">{{ .Title | markdownify }}</a>
+  </li>
+  {{ end }}
+</ul>
+</main>
+{{ template "_internal/pagination.html" . }}
+{{ partial "footer.html" . }}

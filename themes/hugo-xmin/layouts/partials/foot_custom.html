@@ -1,0 +1,11 @@
+<script type="text/javascript">
+  var pwa={"url":"\/service-worker.js"};
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+    navigator.serviceWorker.register(pwa.url)
+    .then(function(registration) { console.log('PWA service worker ready'); registration.update(); })
+    .catch(function(error) { console.log('Registration failed with ' + error); });
+    });
+  }
+</script>
+{{ template "_internal/google_analytics.html" . }}

@@ -1,0 +1,45 @@
+baseURL = "https://shubhampandey.in/"
+title = "Shubham Pandey"
+languageCode = "en-us"
+theme = "hugo-xmin"
+googleAnalytics = "UA-90186372-1"
+footnotereturnlinkcontents = "↩"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+paginate = 30
+enableRobotsTXT = true
+canonifyURLs = true
+[permalinks]
+    post = "/post/:year/:month/:day/:slug/"
+    note = "/note/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+[[menu.main]]
+    name = "Sketches"
+    url = "/sketches/"
+    weight = 3
+[[menu.main]]
+    name = "Kafal"
+    url = "/kafal"
+    weight = 4
+[[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 5
+[[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 6
+[[menu.main]]
+    name = "Subscribe"
+    url = "/index.xml"
+
+[params]
+    description = "My personal blog"
+    footer = "&copy; [Shubham Pandey](/contact-me) 2016 -- 2019 | [Github](https://github.com/shubham9411) | [Twitter](https://twitter.com/shubham9411)"

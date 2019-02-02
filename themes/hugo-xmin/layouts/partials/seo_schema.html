@@ -6,7 +6,7 @@
          "@type": "WebPage",
          "@id": "{{ .Site.BaseURL }}"
     },
-    "image": "/resources/logo.jpg",
+    "image": "{{.Site.BaseURL}}/resources/logo.jpg",
     "articleSection" : "{{ .Section }}",
     "name" : "{{ .Title }}",
     "headline" : "{{ .Title }}",
@@ -24,7 +24,7 @@
             "name": "logo",
             "width": "60",
             "height": "600",
-            "url": "/resources/logo.jpg"
+            "url": "{{.Site.BaseURL}}/resources/logo.jpg"
         }
     },
     "accountablePerson" : "Shubham Pandey",
@@ -40,5 +40,5 @@
 
 <meta name="Description" content="{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}Shubham Pandey Blog{{end}}{{ end }}" />
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="{{ .Permalink}}">
+<link rel="canonical" href="{{ .Permalink | absURL }}">
 <meta name="theme-color" content="#1e73be"/>

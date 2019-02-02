@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://shubhampandey.in/"
 title = "Shubham Pandey"
 languageCode = "en-us"
 theme = "hugo-xmin"

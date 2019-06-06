@@ -1,13 +1,14 @@
 baseURL = "https://shubhampandey.in/"
 title = "Shubham Pandey"
 languageCode = "en-us"
-theme = "hugo-xmin"
+theme = "solar"
 googleAnalytics = "UA-90186372-1"
 footnotereturnlinkcontents = "↩"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 paginate = 30
 enableRobotsTXT = true
 canonifyURLs = true
+pygmentsStyle = "solarized-dark"
 [permalinks]
     post = "/post/:year/:month/:day/:slug/"
     note = "/note/:year/:month/:day/:slug/"
@@ -41,5 +42,6 @@ canonifyURLs = true
     url = "/index.xml"
 
 [params]
+    scheme = "dark" # light, dark or gray
     description = "My personal blog"
     footer = "&copy; [Shubham Pandey](/contact-me) 2016 -- 2019 | [Github](https://github.com/shubham9411) | [Twitter](https://twitter.com/shubham9411)"

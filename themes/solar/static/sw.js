@@ -1,5 +1,5 @@
 'use strict';
-const cacheName = 'shubhampandey.in-0.1.0';
+const cacheName = 'shubhampandey.in-0.2.0';
 const startPage = '/';
 const offlinePage = '/sketches/';
 const filesToCache = [startPage, offlinePage];

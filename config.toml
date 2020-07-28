@@ -1,4 +1,4 @@
-baseURL = "https://shubhampandey.in/"
+baseURL = "https://archive.shubhampandey.in/"
 title = "Shubham Pandey"
 languageCode = "en-us"
 theme = "solar"
@@ -42,6 +42,6 @@ pygmentsStyle = "solarized-dark"
     url = "/index.xml"
 
 [params]
-    scheme = "dark" # light, dark or gray
+    scheme = "light" # light, dark or gray
     description = "My personal blog"
     footer = "&copy; [Shubham Pandey](/contact-me) 2016 -- 2019 | [Github](https://github.com/shubham9411) | [Twitter](https://twitter.com/shubham9411)"
